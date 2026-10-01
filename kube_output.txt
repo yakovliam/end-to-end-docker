@@ -1,0 +1,3 @@
+NAME                         READY   STATUS      RESTARTS   AGE
+docker-text-analysis-5jdxm   0/1     Completed   0          14s
+docker-text-analysis-w6vct   0/1     Completed   0          14s

@@ -1,0 +1,18 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: docker-text-analysis
+spec:
+  completions: 2
+  parallelism: 2
+  backoffLimit: 1
+  template:
+    metadata:
+      labels:
+        app: docker-text-analysis
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: text-analysis
+          image: docker-text-analysis:latest
+          imagePullPolicy: Never
